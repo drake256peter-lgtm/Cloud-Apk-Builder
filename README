@@ -1,0 +1,22 @@
+# Cloud APK Builder ☁️📦
+
+Compile Android and Flutter APKs directly from your phone! Cloud APK Builder securely links to your GitHub account to build projects in the cloud using GitHub Actions. Just select a local project folder, choose Debug or Release, and track the live timeline. Your code compiles remotely, and the finished APK downloads straight to your device.
+
+## 📥 Download
+**[Download the latest APK from the Releases page](../../releases/latest)**
+
+## ✨ Key Features
+* **True Cloud Compilation:** All builds are processed in the cloud. No local compilation drains your phone's battery or processing power.
+* **Smart Framework Detection:** Fully supports both Native Android Gradle and Flutter projects.
+* **Build Customization:** Easily toggle between Debug and Release build outputs.
+* **Project Preflight Checks:** The app validates your project structure before uploading to prevent unnecessary build failures.
+* **Advanced Build Management:** Queue multiple builds, cancel active tasks, and monitor progress via a live stage timeline (zipping, uploading, building, downloading, success/fail).
+* **Comprehensive History:** Access your build history to locate, download, remove, or clear past project artifacts.
+* **Developer-Friendly Diagnostics:** View detailed failure logs with easy sharing options, and check your session dashboard for token validity and GitHub API rate-limit status.
+
+## 🔒 How It Works & Privacy
+This tool is designed with developer transparency in mind:
+1. **GitHub Account Required:** The app requires GitHub OAuth authentication to function.
+2. **Cloud Uploads:** To compile your app, the selected local project folder is zipped and uploaded to a dedicated build repository on your personal GitHub account.
+3. **GitHub Actions:** The app triggers a GitHub Actions workflow to handle the heavy lifting of the compilation.
+4. **Private Artifacts:** User builds are handled strictly as workflow artifacts. They are automatically downloaded back to your device to `Downloads/CloudApkBuilder` and are **not** published publicly as releases.
